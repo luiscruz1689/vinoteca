@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vinos je-lui</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    
+                    <h1>VINOTECA JE-LUI</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Sabores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Viñedo</span> 
+                            </a></li>
+                        <li>
+                            <a href="#blog" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Reseñas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+1123-456-7890">
+                        <i class="fa-solid fa-phone"></i>  9627-7389
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/pexels-henry-&-co-1151243.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/pexels-pixabay-36741.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/pexels-elevate-1267358.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/pexels-bruno-cantuária-774455.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>La Vinoteca que Cambiara Tu Vida </h2>
+                <p>Bienvenidos a Gelui, una empresa apasionada por el mundo del vino. Nos complace presentarte nuestra historia, nuestras pasiones y nuestro compromiso con la excelencia en cada botella que producimos</p>
+                <button>Leer Más</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+        <h2>Sabores</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/1-removebg-preview.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>MORA </h3>
+                    <p>El vino de mora es una deliciosa y seductora bebida que combina la dulzura natural de las moras con los aromas y sabores característicos del vino.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/2-removebg-preview.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>UVA</h3>
+                    <p>El vino de uva es la esencia misma de la tradición vinícola. Producido a partir de las uvas maduras y cuidadosamente seleccionadas, este vino es un deleite para los amantes de la bebida de los dioses.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/4-removebg-preview (1).png" alt="">
+                </div>
+                <div class="info">
+                    <h3>MANZANA</h3>
+                    <p>El vino de manzana ofrece una alternativa interesante para aquellos que buscan salir de lo convencional y explorar nuevos sabores en el mundo vinícola. </p>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <button>Ver Más</button>
+
+    </section>
+
+
+    
+        <div class="rectangulo">
+            <div class="opcion" onclick="cargar(1)">
+                <div class="circulo color1">
+                    <img src="img/1-removebg-preview.png" alt="">
+                    <div class="puntuacion">
+                        3.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>vino de manzana
+                </h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+            <div class="opcion" onclick="cargar(2)">
+                <div class="circulo color2">
+                    <img src="img/2-removebg-preview.png" alt="">
+                    <div class="puntuacion">
+                        4.4 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>vino de uva</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+            <div class="opcion" onclick="cargar(3)">
+                <div class="circulo color3">
+                    <img src="img/4-removebg-preview.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>vino sencillo</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+            <div class="opcion" onclick="cargar(4)">
+                <div class="circulo color4">
+                    <img src="img/4-removebg-preview (1).png" alt="">
+                    <div class="puntuacion">
+                        3.7 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>vino de mora</h3>
+                <a href="#">Agregar a la Orden +</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- SECCION VIÑEDO -->
+    <section id="platos">
+        <h2>NUESTRO VIÑEDO</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="img/pexels-jeswin-thomas-2855986.jpg" alt="">
+                <p>huerto de uvas verdes</p>
+            </div>
+            <div class="item">
+                <img src="img/pexels-jill-wellington-39351.jpg" alt="">
+                <p>caminos del huerto de uvas</p>
+            </div>
+            <div class="item">
+                <img src="img/pexels-elevate-1267358.jpg" alt="">
+                <p>barriles de vino en echibicion</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/pexels-maria-das-dores-3084603.jpg" alt="">
+                <p>se ofrecen pruebas de nuestro vino</p>
+            </div>
+            <div class="item">
+                <img src="img/pexels-david-bartus-442116.jpg" alt="">
+                <p>nuestro huerto</p>
+            </div>
+            <div class="item">
+                <img src="img/pexels-david-1277181.jpg" alt="">
+                <p>campos de uvas</p>
+            </div>
+        </div>
+
+        <button>Ver Más</button>
+
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+        <h2>RESEÑAS DE ENOLOGOS PROFESIONALES</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>william houston</h3>
+                        <p>El vino de mora de Gelui es una verdadera joya enológica. Con un color profundo y seductor, este vino captura la esencia de las moras silvestres en cada sorbo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>ego </h3>
+                        <p>El vino de uva de Gelui es un ejemplo impresionante de la artesanía vitivinícola. Tanto el tinto como el blanco ofrecen una calidad excepcional. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>ameri black</h3>
+                        <p>El vino de manzana de Gelui es una opción refrescante y sorprendente. Su color amarillo dorado atrae la mirada y anticipa la experiencia fresca y afrutada que ofrece. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Leer Más</button>
+    </section>
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>JE-LUI</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#sabores">Viñedo</a>
+                <a href="#sabores">Reseñas</a>
+            </div>
+            <div class="col">
+                <h3>Creadores </h3>
+                <a href="#">Luis Fernando Cruz</a>
+                <a href="#">Jennifer Ramos</a>
+               
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            
+    </section>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
